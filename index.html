@@ -8,48 +8,71 @@
     <title>Microsoft-Clone</title>
   </head>
   <body>
-    <div class="navbar flex justify-between items-center p-4">
+    <div class="navbar flex justify-between items-center p-3 lg:px-24">
       <div class="flex items-center md:hidden space-x-2">
         <div class="hamburger cursor-pointer">
           <div class="lines w-6 h-0.5 my-1 bg-gray-950"></div>
           <div class="lines w-6 h-0.5 my-1 bg-gray-950"></div>
           <div class="lines w-6 h-0.5 my-1 bg-gray-950"></div>
         </div>
-        <div class="search text-xl">Search</div>
+        <img class="w-8 h-8 cursor-pointer" src="/img/images.png" alt="" />
       </div>
 
-      <div class="flex items-baseline">
-        <div class="heading text-xl font-semibold">Microsoft</div>
+      <div class="flex items-center">
+        <div class="flex space-x-1">
+          <img
+            class="w-8 h-8"
+            src="/img/3a4cd391-dd56-44ec-8493-87493c475136-icon.png"
+            alt=""
+          />
+          <div class="heading text-xl font-semibold">Microsoft</div>
+        </div>
         <div class="items mx-10 absolute md:static">
-          <ul class="md:flex space-x-5 hidden md:my-auto  my-10 md:flex-row text-1xl flex-col">
-            <li>Microsoft 365</li>
-            <li>Teams</li>
-            <li>Copilot</li>
-            <li>Windows</li>
-            <li>Surface</li>
-            <li>Xbox Support</li>
+          <ul class="md:flex  space-x-5 cursor-pointer text-xs hidden md:my-auto my-10 md:flex-row text-1xl flex-col">
+            <li class="hover:underline hover:underline-offset-4  ">Microsoft 365</li>
+            <li class="hover:underline hover:underline-offset-4  ">Teams</li>
+            <li class="hover:underline hover:underline-offset-4  ">Copilot</li>
+            <li class="hover:underline hover:underline-offset-4  ">Windows</li>
+            <li class="hover:underline hover:underline-offset-4  ">Surface</li>
+            <li class="hover:underline hover:underline-offset-4  ">Xbox Support</li>
           </ul>
         </div>
       </div>
       <div class="flex space-x-3">
-        <div class="hidden md:block search text-xl">Search</div>
-        <div class="cart text-xl">Cart</div>
-        <div class="account text-xl">Account</div>
+        <div class="hidden md:flex items-center space-x-1 cursor-pointer">
+          <div class="search text-xs hover:underline hover:underline-offset-4">Search</div>
+          <img class="w-6 h-6" src="/img/images.png" alt="" />
+        </div>
+        <div class="md:flex items-center space-x-2 cursor-pointer">
+        <div class="hidden md:block cart text-xs hover:underline hover:underline-offset-4">Cart</div>
+        <img class="w-4 h-4" src="/img/shopping-cart.png" alt="" />
+      </div>
+        <div class="md:flex items-center space-x-2 cursor-pointer">
+        <div class="hidden md:block account text-xs hover:underline hover:underline-offset-4">Sign in</div>
+        <img class="w-4 h-4" src="/img/free-account-269-866236.webp" alt="" />
+      </div>
       </div>
     </div>
-    <div class="flex md:flex-row flex-col">
-        <div class="image md:order-2 md:w-1/2 ">
-            <img src="img/Highlight-Slim-Multi-Canvas-Copilot-001_VP2-859x540.avif" alt="">
+    <div class="flex lg:flex-row flex-col">
+      <div class="image lg:order-2 lg:w-1/2">
+        <img class="w-[100%]" src="img/Highlight-Slim-Multi-Canvas-Copilot-001_VP2-859x540.avif" alt=""/>
+      </div>
+      <div class="content lg:bg-[#ede5f0] lg:order-1 lg:w-1/2">
+        <div class="lg:ml-24 lg:mt-36 ml-8 mt-16 space-y-4">
+          <h1 class="text-2xl lg:text-3xl font-semibold">
+            Get more from Copilot
+          </h1>
+          <p class="text-s lg:text-sm">
+            See how your everyday AI companion can help enhance life and work
+          </p>
+          <div class="flex space-x-3">
+            <button class="bg-blue-700 hover:bg-blue-800 text-white p-2 font-semibold">
+              For individuals
+            </button>
+            <button class="text-blue-700">For buisness ></button>
+          </div>
         </div>
-        <div class="content space-y-4 md:order-1 md:w-1/2 justify-center items-center">
-            <h1 class="text-xl font-semibold">Get more from Copilot</h1>
-            <p class="text-xs">See how your everyday AI companion can help enhance life and work</p>
-            <div class="flex space-x-3">
-                <button class="bg-blue-700 text-white p-2 font-semibold">For individuals</button>
-                <button class="text-blue-700"> For buisness ></button>
-            </div>
-            
-        </div>
+      </div>
     </div>
   </body>
 </html>
